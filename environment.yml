@@ -1,4 +1,4 @@
-name: fatiando-data-CHANGEME
+name: fatiando-data-moon-gravity
 channels:
   - conda-forge
   - defaults
@@ -11,11 +11,13 @@ dependencies:
   - xarray
   - netcdf4
   - pyproj
+  - pyshtools==4.10
   # PyGMT for plotting
-  - pygmt==0.4.1
-  - gmt==6.2.0
+  - pygmt==0.6.*
+  - gmt==6.3.*
+  - ipython
   # Fatiando
   - pooch>=1.0
   - harmonica==0.4.*
-  - verde==1.6.1
+  - verde==1.7.*
   - boule==0.3.*
