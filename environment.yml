@@ -3,21 +3,21 @@ channels:
   - conda-forge
   - defaults
 dependencies:
-  - python==3.9
+  - python==3.11
   - pip
   - numpy
   - jupyterlab
+  - ipykernel
   - matplotlib
   - xarray
   - netcdf4
   - pyproj
-  - pyshtools==4.10
+  - pyshtools==4.10.*
   # PyGMT for plotting
-  - pygmt==0.6.*
-  - gmt==6.3.*
-  - ipython
+  - pygmt==0.11.*
+  - gmt==6.5.*
   # Fatiando
-  - pooch>=1.0
-  - harmonica==0.4.*
-  - verde==1.7.*
-  - boule==0.3.*
+  - pooch==1.8.*
+  - harmonica==0.6.*
+  - verde==1.8.*
+  - boule==0.4.*
