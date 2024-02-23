@@ -1,39 +1,34 @@
-<!--
-This is a template for datasets in the Fatiando a Terra collection.
+# Moon - Gravity grid at 10 arc-minute resolution
 
-When adding a new dataset, fill out the information below. Search for all
-instances of "CHANGEME" and replace with the relevant information.
+Global 10 arc-minute resolution grids of the amplitude of the gravity
+acceleration (gravitational + centrifugal) of the Moon at a constant height.
+Generated from the spherical harmonic model GRGM1200B
+([Goossens et al., 2019](https://doi.org/10.1029/2019JE006086)).
 
-You probably also want to edit the conda environment.yml file to give the
-environment a new name and add/remove dependencies.
-
-You can delete this comment once done.
--->
-
-# Location - Data type
-
-CHANGEME: A few sentences about the dataset and a plot should go here.
-
-![CHANGEME: The alt text of the image.](preview.jpg)
+![Gravity field of the Moon showing high and low patterns around all of the many circular craters](preview.jpg)
 
 | | Summary |
 |--:|:--|
-| File | `CHANGEME.csv` |
-| Size | CHANGEME Mb |
-| Version | [CHANGEME](https://github.com/fatiando-data/CHANGEME/releases/latest) |
-| DOI | https://doi.org/CHANGEME |
+| File | `moon-gravity-10arcmin.nc` |
+| Size | 2.7 Mb |
+| Version | [v1](https://github.com/fatiando-data/moon-gravity-10arcmin/releases/latest) |
+| DOI | https://doi.org/10.5281/zenodo.10694319 |
 | License | [CC-BY](https://creativecommons.org/licenses/by/4.0/) |
-| MD5 | `md5:CHANGEME` |
-| SHA256 | `sha256:CHANGEME` |
-| Source | CHANGEME: Citation and/or link to original data source |
-| Original license | CHANGEME: License (with link) of the original source |
-| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/CHANGEME/blob/main/prepare.ipynb) |
+| MD5 | `md5:d4b9c45f9cbfb0ff903816f89cd0edcf` |
+| SHA256 | `sha256:2b38bdd8ef6ef3af301728387a5a1f27f0a028c0dfc867011125065a3d66acf9` |
+| Source | Goossens, S., Sabaka, T. J., Wieczorek, M. A., Neumann, G. A., Mazarico, E., Lemoine, F. G., et al. (2020). High‐Resolution Gravity Field Models from GRAIL Data and Implications for Models of the Density Structure of the Moon's Crust. Journal of Geophysical Research: Planets. doi:[10.1029/2019je006086](https://doi.org/10.1029/2019je006086) ; [NASA's Planetary Geology, Geophysics and Geochemistry Laboratory](https://pgda.gsfc.nasa.gov/products/75) |
+| Original license | public domain |
+| Processing code | [`prepare.ipynb`](https://nbviewer.org/github/fatiando-data/moon-gravity-10arcmin/blob/main/prepare.ipynb) |
 
 ## Changes made
 
 > These are the changes made to the original dataset.
 
-* CHANGEME: List here changes made to the original data.
+* Expanded the spherical harmonic model into a grid.
+* Replaced the GM, radius, and angular velocity of the model the those from
+  [Wieczorek (2015)](https://doi.org/10.1016/b978-0-444-53802-4.00169-x).
+* Generate the grid at a constant height of 11 km above the reference lunar
+  sphere to guarantee the data are outside the topographic masses.
 
 ## About this repository
 
